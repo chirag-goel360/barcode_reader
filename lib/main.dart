@@ -194,16 +194,27 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: _file != null
                               ? Image.file(
                                   _file,
-                                  width: 195,
-                                  height: 193,
+                                  width: 140,
+                                  height: 150,
                                   fit: BoxFit.fill,
                                 )
                               : Container(
                                   width: 140,
                                   height: 150,
-                                  child: Icon(
-                                    Icons.camera_alt,
-                                    color: Colors.grey[800],
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.camera_alt,
+                                        color: Colors.grey[800],
+                                      ),
+                                      Text(
+                                        'Press for Gallery',
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                         ),
